@@ -92,11 +92,7 @@ const Index = () => {
       return NaN;
     } else {
       setPassword(GenratePassword);
-      toast.info("Password Generated successfully!");
-      setTimeout(() => {
-        toast.info("Now you can copy the password by clicking on the box.");
-      }, 1000); 
-    }
+      toast.info("Password Generated successfully! Now you can copy the password by clicking on the box.");}
   };
   const copyText = () => {
     navigator.clipboard.writeText(password);
